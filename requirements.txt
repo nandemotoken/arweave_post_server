@@ -1,3 +1,4 @@
 Flask
 Gunicorn
 arweave-python-client
+flask_cors

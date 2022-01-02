@@ -13,10 +13,12 @@ def hello_world():
 
 @app.route('/post' , methods=["POST"])
 def arpost():
+    returnstr = ""
     for key,file in request.files.items():
         filepath = f"./tmp/{key}"
         file.save(filepath)
-    return str(filepath)
+        returnstr.append(str(filepath))
+    return returnstr
 
 
 

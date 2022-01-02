@@ -9,3 +9,12 @@ app = Flask(__name__)
 def hello_world():
     a = os.getenv("a")
     return a
+
+@app.route('/post' , methods=["POST"])
+def arpost():
+    c = request.json["myfile"]
+    return c
+
+
+
+

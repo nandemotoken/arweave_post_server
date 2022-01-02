@@ -13,8 +13,9 @@ def hello_world():
 
 @app.route('/post' , methods=["POST"])
 def arpost():
-    f = request.files.items()
-    filestr = str(f[0])
+    for key,file in request.files.items():
+        filepath = f"./tmp/{key}"
+        file.save(filepath)
     return filestr
 
 

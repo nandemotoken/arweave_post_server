@@ -16,7 +16,7 @@ def arpost():
     for key,file in request.files.items():
         filepath = f"./tmp/{key}"
         file.save(filepath)
-    return filestr
+    return str(filepath)
 
 
 

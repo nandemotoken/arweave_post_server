@@ -13,7 +13,7 @@ def hello_world():
 
 @app.route('/post' , methods=["POST"])
 def arpost():
-    returnstr = ""
+    returnstr = "abcdef"
     for key,file in request.files.items():
         #filepath = f"/tmp/{key}"
         #file.save(filepath)

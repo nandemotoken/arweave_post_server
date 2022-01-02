@@ -18,7 +18,7 @@ def arpost():
         #filepath = f"/tmp/{key}"
         #file.save(filepath)
         #returnstr.append(str(filepath))
-        returnstr = returnstr + str(file)
+        returnstr = returnstr + str(type(file))
     return jsonify({"returnstr":returnstr})
 
 

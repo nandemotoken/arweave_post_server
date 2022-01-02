@@ -13,7 +13,7 @@ def hello_world():
 
 @app.route('/post' , methods=["POST"])
 def arpost():
-    #c = request.json["myfile"]
+    c = request.json["myfile"]
     return "posted"
 
 

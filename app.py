@@ -15,9 +15,10 @@ def hello_world():
 def arpost():
     returnstr = ""
     for key,file in request.files.items():
-        filepath = f"/tmp/{key}"
-        file.save(filepath)
-        returnstr.append(str(filepath))
+        #filepath = f"/tmp/{key}"
+        #file.save(filepath)
+        #returnstr.append(str(filepath))
+        returnstr.append(file.read())
     return returnstr
 
 

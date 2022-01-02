@@ -19,7 +19,7 @@ def arpost():
         #file.save(filepath)
         #returnstr.append(str(filepath))
         returnstr.append(file.read())
-    return returnstr
+    return jsonify({"returnstr":returnstr})
 
 
 
